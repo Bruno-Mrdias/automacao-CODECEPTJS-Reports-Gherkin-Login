@@ -14,6 +14,7 @@
     "projeto-automacao": "file:"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
     "allure-codeceptjs": "^3.0.5",
     "codeceptjs": "^3.6.7"
   }

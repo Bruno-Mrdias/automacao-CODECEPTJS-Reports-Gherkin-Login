@@ -13,9 +13,9 @@ button:{
 },
 
 
-loginUser(){
-  I.fillField(this.fields.user, 'matrs@gmail.com')
-  I.fillField(this.fields.senha, secret('123456'))
+loginUser(email, senha){
+  I.fillField(this.fields.user, email)
+  I.fillField(this.fields.senha, senha)
   I.click(this.button.logbtn)
   I.waitForElement('.swal2-title', 5)
 },

@@ -1,3 +1,5 @@
+const { faker } = require('@faker-js/faker');
+
 Feature('login');
 
 Scenario('Login with success',  ({ I,login_user, home_page }) => {
@@ -6,7 +8,7 @@ Scenario('Login with success',  ({ I,login_user, home_page }) => {
    home_page.loginPage()
 
     //teste login
-    login_user.loginUser()
+    login_user.loginUser(faker.internet.email(), secret(faker.internet.password({length: 6 })))
 }).tag('@teste1')
 
 Scenario('Login with wrong email',  ({ I,login_user , home_page}) => {
